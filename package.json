@@ -1,0 +1,49 @@
+{
+  "name": "ticketdashboard",
+  "version": "1.0.0",
+  "description": "Statistics of bugs and issues for the development team.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"server/**/*.test.js\"",
+    "start": "NODE_ENV=PRODUCTION node server/server.js",
+    "dev": "NODE_ENV=development nodemon server/server.js",
+    "devwin": "set NODE_ENV=development&&nodemon server/server.js",
+    "devstatic": "NODE_ENV=development node server/server.js",
+    "devwinstatic": "set NODE_ENV=development&&node server/server.js",
+    "postinstall": "webpack",
+    "watch": "webpack --watch"
+  },
+  "engines": {
+    "node": "8.7.0",
+    "yarn": "1.1.0"
+  },
+  "author": "Rick Schubert",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-cli": "^6.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "chart.js": "2.4.0",
+    "eslint-plugin-react": "^7.4.0",
+    "express": "^4.15.4",
+    "github": "^11.0.0",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.31",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.1",
+    "expect": "^21.2.1",
+    "mocha": "^4.0.1",
+    "supertest": "3.0.0"
+  }
+}

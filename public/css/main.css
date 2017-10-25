@@ -1,0 +1,26 @@
+body {
+    background-color: #2F343D
+}
+.title-image {
+    max-height: 80px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.chart-canvas {
+    position: absolute;
+}
+.labeloverlay {
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.92);
+    margin-top: 35%;
+    padding-top: 2%;
+    margin-bottom: 50%;
+    padding-bottom: 0.5%;
+    background-color: rgba(47, 52, 61, 0.45)
+}
+
+#header {
+    margin: 1em 0;
+    color: rgb(231, 227, 227);
+}
