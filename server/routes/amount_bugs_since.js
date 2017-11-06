@@ -6,11 +6,12 @@ const AmountBugsSince = (db, app) => {
         `/api/AmountBugsSince`,
         async (req, res) => {
 
-            let currentDate = new Date()
+            // Freeze time for demo purposes
+            let currentDate = new Date("2017-10-26T20:23:01.804Z")
             currentDate.setDate(currentDate.getDate() - 7)
             const pastWeek = currentDate.toISOString()
 
-            currentDate = new Date()
+            currentDate = new Date("2017-10-26T20:23:01.804Z")
             currentDate.setDate(currentDate.getDate() - 30)
             const pastMonth = currentDate.toISOString()
 
